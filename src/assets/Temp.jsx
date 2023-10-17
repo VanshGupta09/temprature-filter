@@ -8,7 +8,7 @@ const Temp = () => {
 
     useEffect(() => {
         const fetchApi = async () => {
-            const url = `https://api.openweathermap.org/data/2.5/weather?q=${state}&appid=db53821a6da75a89b882a5d1a9b2e7b4`;
+            const url = `https://api.openweathermap.org/data/2.5/weather?q=${state}&units=metric&appid=db53821a6da75a89b882a5d1a9b2e7b4`;
             const data = await fetch(url);
             const jsonData = await data.json();
             // console.log(jsonData.main.temp);
@@ -37,7 +37,7 @@ const Temp = () => {
                 {(!city?.main ? <p className="not-found">City not found</p> :
                     <>
                         <h1> <FaStreetView /> {state} </h1>
-                        <h2>{city?.main?.temp} deg cel</h2>
+                        <h2>{city?.main?.temp}° cel</h2>
                         <p className="min-max">min temprature : {city?.main?.temp_min} <br/> max temprature : {city?.main?.temp_max}</p>
                     </>
                 )}
