@@ -1,0 +1,45 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main .temp-card {
+    max-width: 350px;
+    width: 100%;
+    padding: 30px;
+    background-color: rgb(188, 225, 225);
+    text-align: center;
+}
+
+.main .input input {
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 3px 5px;
+}
+
+.main h1 {
+    font-size: 3rem;
+    margin: 20px 0 10px;
+}
+
+.main>h1 {
+    margin-bottom: 20px;
+}
+
+.main h2 {
+    font-size: 2rem;
+    margin: 15px 0 10px;
+
+}
+
+.main p {
+    font-size: 1.1rem;
+}
+
+.main .not-found {
+    margin-top: 20px;
+}
