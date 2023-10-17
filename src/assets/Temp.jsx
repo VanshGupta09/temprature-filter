@@ -4,7 +4,7 @@ import { FaStreetView } from 'react-icons/fa';
 const Temp = () => {
 
     const [city, setCity] = useState('');
-    const [state, setState] = useState('london');
+    const [state, setState] = useState('');
 
     useEffect(() => {
         const fetchApi = async () => {
@@ -31,6 +31,7 @@ const Temp = () => {
                     <input type="search"
                         value={state}
                         onChange={inp}
+                        placeholder="Enter the city name"
                     />
                 </div>
                 {(!city?.main ? <p className="not-found">City not found</p> :
