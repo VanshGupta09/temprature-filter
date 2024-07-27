@@ -25,7 +25,7 @@ const Temp = () => {
 
     return <>
         <div className="main">
-            <h1>Temprature filter</h1>
+            <h1>Temperature filter</h1>
             <div className="temp-card">
                 <div className="input">
                     <input type="search"
